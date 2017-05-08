@@ -1,22 +1,20 @@
-import ReactDOM from 'react-dom';
+import App from './components/App';
 import { Provider } from 'react-redux';
+import ReactDOM from 'react-dom';
 import React from 'react';
-import { createStore } from 'redux';
 import { applyMiddleware, createStore } from 'redux';
 
 const defaultState = {
-	appName: 'conduit',
-	articles: null
+  appName: 'conduit',
+  articles: null
 };
-
 const reducer = function(state = defaultState, action) {
-	return state;
+  return state;
 };
-
-
+const store = createStore(reducer);
 
 ReactDOM.render((
   <Provider store={store}>
-  	<App />
+    <App />
   </Provider>
-), document.getElementById('main'));
+), document.getElementById('root'));
