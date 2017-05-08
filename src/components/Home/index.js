@@ -21,7 +21,7 @@ class Home extends React.Component {
 						<div className="col-md-3">
 							<div className="sidebar">
 
-								<p>Popular Tags</>
+								<p>Popular Tags</p>
 							</div>
 						</div>
 					</div>
