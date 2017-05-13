@@ -19,7 +19,7 @@ class Home extends React.Component {
 	componentWillMount() {
 		this.props.onLoad(agent.Articles.all());
 	}
-	
+
 	render() {
 		return(
 			<div className="home-page">
@@ -43,4 +43,4 @@ class Home extends React.Component {
 	}
 }
 
-export default connect(mapStateToProps, () => ({}))(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
