@@ -1,5 +1,6 @@
 'use strict';
 
+import {Link} from 'react-router';
 import React from 'react';
 
 class Header extends React.Component {
@@ -7,6 +8,10 @@ class Header extends React.Component {
 		return (
 			<nav className="navbar navbar-light">
 				<div className="container">
+
+					<Link to="/" className="navbar-brand">
+						{this.props.appName.toLowerCase()}
+					</Link>
 
 					<a className="navbar-brand">
 						{this.props.appName.toLowerCase()}
